@@ -18,6 +18,7 @@ jobs:
         java-version: '17'
     - name: Build Project
       run: mvn clean install -DskipTests
+      working-directory: cicd/
     - name: Login Dockerhub
       env:
         DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
