@@ -14,8 +14,8 @@ jobs:
 
     steps:
     - name: Pull Docker Image
-      run: sudo docker pull skmahajan4998/cicd-app:latest
+      run: docker pull skmahajan4998/cicd-app:latest
     - name: Delete Old Docker Container
-      run: sudo docker rm -f cicd-app-container || true
+      run: docker rm -f cicd-app-container || true
     - name: Run Docker Container
-      run: sudo docker run -d -p 8080:8080 --name cicd-app-container skmahajan4998/cicd-app
+      run: docker run -d -p 8080:8080 --name cicd-app-container skmahajan4998/cicd-app
