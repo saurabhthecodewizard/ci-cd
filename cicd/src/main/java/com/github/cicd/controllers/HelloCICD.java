@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloCICD {
     @GetMapping("/")
     public String helloCicd() {
-        return "Hello CICD First Blood";
+        return "Hello CICD First Blood Drawn";
     }
 }
